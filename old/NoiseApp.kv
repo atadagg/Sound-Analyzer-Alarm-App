@@ -1,0 +1,27 @@
+<BoxLayout>:
+    orientation: "vertical"
+    Label:
+        text:"Noise App"
+        font_size:"64"
+        color: 1 , 0.18, 0.3
+    Label:
+        id: display_label
+        text: "00:00"
+        font_size:"32"
+        size: 100, 50
+    Button:
+        id:start_button
+        text: "Start"
+        font_size: "32"
+        size: 100, 50
+        on_press: root.start_recording_clock()
+    Button:
+        id:stop_button
+        text: "Stop"
+        font_size: "32"
+        size: 100, 50
+        on_press: root.stop_recording_clock()
+        disabled: True
+    Switch:
+        id:duration_switch
+    User

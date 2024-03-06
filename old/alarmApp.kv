@@ -1,0 +1,13 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    Button:
+        id: record_btn
+        text: 'Record'
+        on_press: app.start_recording()
+
+    Button:
+        id: stop_btn
+        text: 'Stop'
+        state: 'disabled'
+        on_press: app.stop_recording()
